@@ -1,0 +1,287 @@
+nav{
+    width:100%;
+    height:80px;
+    background-color: rgb(216, 102, 68);
+    color: rgb(255, 255, 255);
+    
+}
+nav-text{
+    padding-top: 30px;;
+
+}
+
+header{
+    width: 100%;
+    height:550px;
+    background-image: url("../images/Screenshot\ 2023-04-25\ at\ 16.48.20.png");
+    background-size: cover;
+    background-position: center;
+    color: #fa4028;
+    text-align: center;
+
+}
+body{
+    background-image: url("/images/background\ copy.jpg");
+    color: #ffffff;
+    background-size: cover;
+    /* background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 500px; */
+ 
+}
+h2{font-family: 'Anton', sans-serif;
+}
+h1{font-family:  'Sigmar', cursive;
+    text-align: center;
+}
+h3{
+    font-family: 'Beth Ellen', cursive;
+   
+}
+h4{font-family: 'Playfair Display', serif;
+}
+.button-group{
+    width: auto;
+    height: auto;
+}
+
+.button{
+    width: 200px;
+    height:40px ;
+    text-align: center ;
+    padding-top: 7px;
+    font-weight:bold ;
+    float: left;
+    margin-top:10px ;
+    border-radius: 8px ;
+}
+
+.normal{
+    background-color: #f98527;
+    color: rgb(255, 255, 255);
+    border: 10px;
+}
+.normal:hover{
+    cursor:pointer;
+    background-color: white;
+    color: #2b2b2b;
+    border:5px solid #2b2b2b;
+    padding-top:5px;
+    
+}
+
+.inverted{
+    background-color: #ffffff;
+    padding-top: 5px !important;
+    color: rgb(239, 135, 50);
+}
+.inverted:hover{
+    cursor: pointer;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+.round-image{
+    width:70px;
+    height:70px;
+    background-image: url("../images/Screenshot\ 2023-04-26\ at\ 18.55.51.png");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+}
+.round-image-a{
+    width:60px;
+    height:60px;
+    background-image: url("../images/Screenshot\ 2023-04-26\ at\ 18.55.51.png");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    align-items: center;
+}
+.round-image-b{
+    width:60px;
+    height:60px;
+    background-image: url("../images/copyright-symbol-isolated-on-transparent-260nw-654664078.webp");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    
+}
+
+.col-box{
+    width:80%;
+    height:20px;
+    margin:5px;
+    padding-top: 5px;
+    padding-left: 40px;
+    
+
+}
+.col-box-2{
+    width:70%;
+    height:550px;
+    background-image: url("../images/whats-in-a-name.png");
+    background-size: cover;
+    background-position: center;
+    margin-left:300px;
+    padding: 150px;
+}
+.col-box-3{
+    width:40%;
+    height:400px;
+    background-color: #b81818b5;
+    background-size: cover;
+    background-position: center;
+    margin:30px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #ffffff;
+}
+.col-box-4{
+    width:80%;
+    height:200px;
+    background-image: url("../images/sauce.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin:30px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+.col-box-5{
+    width:80%;
+    height:200px;
+    background-image: url("../images/HERO_Worlds_Best_Soda_Bundaberg_shutterstock_679079920.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin:30px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.round-image1{
+    width:250px;
+    height:250px;
+    background-image: url("../images/various-baguette-sandwiches-with-big-portion-foods-inside.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+.round-image2{
+    width:250px;
+    height:250px;
+    background-image: url("../images/Screenshot\ 2023-04-25\ at\ 16.45.17.png");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+.round-image3{
+    width:250px;
+    height:250px;
+    background-image: url("../images/side-view-sandwich-white-bread-with-grilled-meat-cutlet-cheese-lettuce-french-fries-mayo-ketchup-boardjpg.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+
+.round-image4{
+    width:250px;
+    height:250px;
+    background-image: url("../images/intro-1641315527.jpeg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 20px;
+}
+.round-image5{
+    width:250px;
+    height:250px;
+    background-image: url("../images/submarine-sandwiches_3683.jpeg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 50px;
+    
+}
+.round-image6{
+    width:250px;
+    height:250px;
+    background-image: url("../images/vegetarianitaliansub1-1643994462.jpeg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+.round-image7{
+    width:250px;
+    height:250px;
+    background-image: url("../images/tuna.jpeg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+.round-image8{
+    width:250px;
+    height:250px;
+    background-image: url("../images/pulled-pork-3-500x500.jpeg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+.round-image-a{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/logos/facebook_icon.svg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 45%;
+    
+}
+.round-image-b{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/logos/instagram_icon.svg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 100px;
+    margin: 20px;
+}
+.round-image-c{
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/logos/twitter_icon.svg");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 100px;
+    margin: 20px;
+}
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #2b2b2b;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    
+}
