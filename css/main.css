@@ -25,9 +25,9 @@ body{
     color: #ffffff;
     background-size: cover;
     /* background-position: center;
-    background-size: 100%;
-    width: 100%;
-    height: 500px; */
+    background-size:
+    width: 100%; */
+    height: 800px;
  
 }
 h2{font-family: 'Anton', sans-serif;
@@ -40,6 +40,7 @@ h3{
    
 }
 h4{font-family: 'Playfair Display', serif;
+    color: #fa4028;
 }
 .button-group{
     width: auto;
