@@ -9,6 +9,9 @@ addOrder= () => {
     
     let payment =document.getElementById("payment").value
     console.log(first, location, payment)
+        alert( first + " your order has been confirmed.")
+    
+
     
 }
 //number add a + before the doc.get
@@ -22,11 +25,11 @@ makeSub = () => {
     let size = document.getElementById("size").value;
     
     if(size === "Small"){
-        subTotal = subTotal + 15;
+        subTotal = subTotal + 10;
     } else if(size === "Medium"){
-        subTotal = subTotal + 30;
+        subTotal = subTotal + 20;
     } else if(size === "Large"){
-        subTotal = subTotal + 50;
+        subTotal = subTotal + 30;
     }
     
     let breadOptions = document.getElementsByName("bread");
