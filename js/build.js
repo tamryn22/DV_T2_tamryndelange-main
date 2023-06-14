@@ -116,8 +116,8 @@ displayOrder = () => {
         for(let i = 0; i < subOrder.length; i ++){
    
            let name = subOrder [i].subName;
-           let size = subOrder [i].size;
-           let fillings = subOrder [i].fillingsOptions;
+           let size = subOrder [i].subSize;
+           let fillings = subOrder [i].subFillings;
            let price = subOrder [i].subPrice;
    
            overallTotal += price;
