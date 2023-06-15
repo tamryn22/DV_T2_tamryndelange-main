@@ -59,9 +59,22 @@ makeSub = () => {
     });
 
     console.log(subOrder)
+    
+    let data= JSON.stringify(subOrder)
+    localStorage.setItem("order", data);
+
     document.getElementById("realTimeCost").innerHTML = "R0.00"
     document.getElementById("subForm").reset();
+    
 
+    let oldData = JSON.parse(localStorage.getItem('order'));
+    if (oldData === null) {
+    localStorage.setItem('order', JSON.stringify(subOrder));
+    } else {
+    let newData = subOrder.concat(oldData);
+    localStorage.setItem('order', JSON.stringify(newData));
+    }
+    //   localStorage.clear();
 }
 
 realTimeCost = () => {
