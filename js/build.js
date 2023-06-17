@@ -146,8 +146,8 @@ displayOrder = () => {
                </div>
                <ul class="list-group list-group-flush">
                    <li class="list-group-item"><strong>Size:</strong> ${size}</p></li>
-                   <li  class="list-group-item"><strong>Toppings:</strong>${fillings}</p></li>
-                   <li class="list-group-item"><strong>Sauce:</strong> Tomato, Mayonnaise, Creamy Garlic</p></li>
+                   <li  class="list-group-item"><strong>Fillings:</strong>${fillings}</p></li>
+                   <li class="list-group-item"><strong>Sauce:</strong> Mayonnaise</p></li>
                    <li class="list-group-item"><strong>R${price}.00</strong></p></li>
                </ul>
            </div>`

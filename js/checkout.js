@@ -1,4 +1,4 @@
-let checkTotal = 20;
+let checkTotal = 0;
 
 displayCheck = () =>{
 
@@ -30,9 +30,9 @@ displayCheck = () =>{
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Size:</strong> ${size} </p>
                 <p><strong>Base:</strong> ${bread}</p>
-                <p><strong>Toppings:</strong> ${fillings.join()}</p>
-                <p><strong>Sauce:</strong>Tomato, Mayonnaise, Creamy Garlic</p>
-                
+                <p><strong>Fillings:</strong> ${fillings.join()}</p>
+                <p><strong>Sauce:</strong> Mayonnaise</p>
+                <p><strong>Price:</strong> ${price}.00</p>
             </div>
         `
         totalArea.innerHTML = "R" + checkTotal + ".00"
@@ -40,7 +40,7 @@ displayCheck = () =>{
     }
 }
 
-let promoRun = 10/100
+let promoRun = false
 
 promoNumber = () => {
 
@@ -51,17 +51,16 @@ promoNumber = () => {
     let newTotal = document.getElementById('totalOut')
     let totalArea = document.getElementById ('totalOut');
 
-    if(promoRun = true){
+    if(promoRun = false){
         console.log(promoRun);
         if(value == 1234){
     
-            let totalArea = checkTotal -10
-            // checkTotal ="R140.00"
-            console.log(totalArea);
+            let updateTotal = checkTotal - 10
+            console.log(updateTotal);
     
-            totalArea.innerHTML = "R" + checkTotal+ ".00"
+            totalArea.innerHTML = "R" + updateTotal + ".00"
 
-            promoRun = false
+            promoRun = true
             console.log(promoRun);
         } else {
             alert("Promo Code not valid")
