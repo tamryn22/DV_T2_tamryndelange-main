@@ -8,7 +8,7 @@ addOrder= () => {
     
     let payment =document.getElementById("payment").value
     console.log(first, location, payment)
-        alert( first + " your order has been confirmed.")
+        alert( "Welcome "+ first + ", your order has been confirmed with payment method: " + payment)
     
 
     
@@ -55,6 +55,7 @@ makeSub = () => {
         subSize: size,
         subBread: breadValue,
         subFillings: topArray,
+        // subSauce: sauce,
         subPrice: subTotal
     });
 
@@ -131,6 +132,7 @@ displayOrder = () => {
            let name = subOrder [i].subName;
            let size = subOrder [i].subSize;
            let fillings = subOrder [i].subFillings;
+           
            let price = subOrder [i].subPrice;
    
            overallTotal += price;
@@ -145,6 +147,7 @@ displayOrder = () => {
                <ul class="list-group list-group-flush">
                    <li class="list-group-item"><strong>Size:</strong> ${size}</p></li>
                    <li  class="list-group-item"><strong>Toppings:</strong>${fillings}</p></li>
+                   <li class="list-group-item"><strong>Sauce:</strong> Tomato, Mayonnaise, Creamy Garlic</p></li>
                    <li class="list-group-item"><strong>R${price}.00</strong></p></li>
                </ul>
            </div>`

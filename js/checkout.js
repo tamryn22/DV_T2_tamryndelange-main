@@ -31,7 +31,8 @@ displayCheck = () =>{
                 <p><strong>Size:</strong> ${size} </p>
                 <p><strong>Base:</strong> ${bread}</p>
                 <p><strong>Toppings:</strong> ${fillings.join()}</p>
-                <p><strong>Price:</strong> R${price}.00</p>
+                <p><strong>Sauce:</strong>Tomato, Mayonnaise, Creamy Garlic</p>
+                
             </div>
         `
         totalArea.innerHTML = "R" + checkTotal + ".00"
@@ -39,7 +40,7 @@ displayCheck = () =>{
     }
 }
 
-let promoRun = false
+let promoRun = true
 
 promoNumber = () => {
 
@@ -50,16 +51,17 @@ promoNumber = () => {
     let newTotal = document.getElementById('totalOut')
     let totalArea = document.getElementById ('totalOut');
 
-    if(promoRun = false){
+    if(promoRun = true){
         console.log(promoRun);
         if(value == 1234){
     
-            let updateTotal = checkTotal - 20
-            console.log(updateTotal);
+            let totalArea = checkTotal -10
+            checkTotal ="R140.00"
+            console.log(newTotal);
     
-            totalArea.innerHTML = "R" + updateTotal + ".00"
+            totalArea.innerHTML = "R" + checkTotal+ ".00"
 
-            promoRun = true
+            promoRun = false
             console.log(promoRun);
         } else {
             alert("Promo Code not valid")

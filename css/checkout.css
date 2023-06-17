@@ -137,10 +137,12 @@ select{
 }
 .orderLine{
     background-color: #ef984cc3;
-    margin-left: 400px;
+    margin-left: 350px;
     /* margin-right: 80px; */
     border-radius: 15px;
     width: 400px;
+    padding: 10px;
+    margin-top: 5px;
 }
 .round-image-a{
     width: 35px;
