@@ -40,7 +40,7 @@ displayCheck = () =>{
     }
 }
 
-let promoRun = true
+let promoRun = 10/100
 
 promoNumber = () => {
 
@@ -56,8 +56,8 @@ promoNumber = () => {
         if(value == 1234){
     
             let totalArea = checkTotal -10
-            checkTotal ="R140.00"
-            console.log(newTotal);
+            // checkTotal ="R140.00"
+            console.log(totalArea);
     
             totalArea.innerHTML = "R" + checkTotal+ ".00"
 

@@ -137,12 +137,19 @@ select{
 }
 .orderLine{
     background-color: #ef984cc3;
-    margin-left: 350px;
+    margin-left: 500px;
     /* margin-right: 80px; */
     border-radius: 15px;
     width: 400px;
     padding: 10px;
     margin-top: 5px;
+}
+
+.form-control{
+    width: 400px;
+    margin-left: 500px;
+    border-style: dashed;
+   border-color: #000;;
 }
 .round-image-a{
     width: 35px;
