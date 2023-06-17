@@ -5,7 +5,6 @@
 addOrder= () => {
     let first = document.getElementById("first").value
     let location = document.getElementById("location").value 
-    
     let payment =document.getElementById("payment").value
     console.log(first, location, payment)
         alert( "Welcome "+ first + ", your order has been confirmed with payment method: " + payment)
@@ -49,13 +48,21 @@ makeSub = () => {
             subTotal = subTotal + +fillingsOptions[i].dataset.cost
         }
     }
+    let sauceOptions = document.getElementsByName("sauce");
+    let sauce;
+    for(let i = 0; i < sauceOptions.length; i++){
+        if(sauceOptions[i].checked){
+            sauce = sauceOptions[i].value 
+            subTotal = subTotal + +sauceOptions [i].dataset.cost
+        }
+    }
 
     subOrder.push({
         subName: subName,
         subSize: size,
         subBread: breadValue,
         subFillings: topArray,
-        // subSauce: sauce,
+        subSauce: sauce,
         subPrice: subTotal
     });
 
@@ -85,11 +92,11 @@ realTimeCost = () => {
     let size = document.getElementById("size").value;
 
     if(size === "Small"){
-        realTimeValue = realTimeValue + 15;
+        realTimeValue = realTimeValue + 10;
     } else if(size === "Medium"){
-        realTimeValue = realTimeValue + 30;
+        realTimeValue = realTimeValue + 20;
     } else if(size === "Large"){
-        realTimeValue = realTimeValue + 50;
+        realTimeValue = realTimeValue + 25;
     }
 
     let breadOptions = document.getElementsByName("bread");
@@ -132,7 +139,7 @@ displayOrder = () => {
            let name = subOrder [i].subName;
            let size = subOrder [i].subSize;
            let fillings = subOrder [i].subFillings;
-           
+           let sauce = subOrder [i].subSauce
            let price = subOrder [i].subPrice;
    
            overallTotal += price;
@@ -147,7 +154,7 @@ displayOrder = () => {
                <ul class="list-group list-group-flush">
                    <li class="list-group-item"><strong>Size:</strong> ${size}</p></li>
                    <li  class="list-group-item"><strong>Fillings:</strong>${fillings}</p></li>
-                   <li class="list-group-item"><strong>Sauce:</strong> Mayonnaise</p></li>
+                   <li class="list-group-item"><strong>Sauce:</strong> ${sauce}</p></li>
                    <li class="list-group-item"><strong>R${price}.00</strong></p></li>
                </ul>
            </div>`

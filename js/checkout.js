@@ -30,8 +30,7 @@ displayCheck = () =>{
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Size:</strong> ${size} </p>
                 <p><strong>Base:</strong> ${bread}</p>
-                <p><strong>Fillings:</strong> ${fillings.join()}</p>
-                <p><strong>Sauce:</strong> Mayonnaise</p>
+                <p><strong>Toppings:</strong> ${fillings.join()}</p>
                 <p><strong>Price:</strong> ${price}.00</p>
             </div>
         `
@@ -68,7 +67,13 @@ promoNumber = () => {
         }
     }  else {
         console.log("already added promo code");
-        // alert("Already added promo code")
+        alert("Promo Code not valid")
     }
 
+}
+
+let reset = true
+resetReturn = () => {
+    console.log(reset)
+    alert("Payment Made")
 }
